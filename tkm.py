@@ -31,10 +31,10 @@ async def rsp(ctx, *, tkm="Taş"):
         if tkm.lower() == "taş":
             embed = discord.Embed(title="", description=f"**Durum**: Kaybettin.{durum_message}", color=0xff0000)
             await ctx.send(embed=embed)
-        elif "kağıt":
+        elif tkm.lower() == "kağıt":
             embed = discord.Embed(title="", description=f"**Durum**: Beraberlik.{durum_message}", color=0x000000)
             await ctx.send(embed=embed)
-        elif "makas":
+        elif tkm.lower() == "makas":
             embed = discord.Embed(title="", description=f"**Durum**: Kazandın!{durum_message}", color=0x00ff00)
             await ctx.send(embed=embed)
     elif bot_secimi.lower() == "makas":
