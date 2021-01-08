@@ -25,6 +25,6 @@ async def blur(ctx, member: typing.Optional[discord.Member], value: typing.Optio
 
     profil_lokasyon = "./blur_{0}_{1}.png".format(randint(1, 100000), member.id)
 
-    profil.filter(ImageFilter.GaussianBlur(value)).save(pfp_conf)
+    profil.filter(ImageFilter.GaussianBlur(value)).save(profil_lokasyon)
     await ctx.send(f"İşte, Bulanıklaştırılmış Resmin Burada:", file=discord.File(profil_lokasyon))
     os.remove(profil_lokasyon)
