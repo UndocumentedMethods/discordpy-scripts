@@ -7,4 +7,4 @@ from config.visual.window import *
 # loader.py
 from config.bot.loader import *
     
-client.run(GetBotToken())
+client.run(GetBotToken())j
